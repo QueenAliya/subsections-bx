@@ -1,0 +1,231 @@
+/* services */
+li{
+  list-style-type:none;
+}
+.top_list-container{
+    width: 95%;
+  }
+  .top_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 32px;
+  }
+  /* .top_list ul{
+    padding-left: 0;
+  } */
+  .top_list-title_1, .top_list-title_2, .top_list-title_3, .top_list-title_4 {
+    padding: 9px 15px;
+    border: 1px solid #C98583;
+    color: #C98583;
+    font-family: 'Azo Sans 2';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  .top_list-title_1:hover, .top_list-title_2:hover, .top_list-title_3:hover, .top_list-title_4:hover {
+    border: 1px solid #7D3A38;
+    color: #7D3A38;
+  }
+  .top_list-title_1.active, .top_list-title_2.active, .top_list-title_3.active, .top_list-title_4.active {
+    border: 1px solid #7D3A38;
+    background: #7D3A38;
+    color: #FBF0EC;
+  }
+  .services_left-list{
+    background-color: #1B4D4A;
+  }
+ 
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .left{
+      width: 50%;
+  }
+  ul.right{
+    width: 50%;
+  }
+  .right ul, .right ul ul, .right ul ul ul{
+    list-style-type:none;
+    padding-left: 0;
+  }
+  .li_item1 ul{
+    /* padding-left: 0; */
+  }
+  .h2title{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .h2title .title{
+    text-align: left;
+    color: #C98583;
+    font-family: 'Azo Sans 2';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .h2title .title:hover{
+    color: #572437;
+  }
+  .h2title .title.active{
+    color: #572437;
+  }
+  
+  .title.disactive{
+    color: #c9858385;
+  }
+
+  .h2title .title-arrow{
+    position: absolute;
+    right: 0;
+  }
+  .h2title .title-arrow.d-none{
+    display: none;
+  }
+  .li_item2.active > .h2title .title-arrow{
+    transform: rotate(180deg);
+  }
+  .li_item2.active > .h2title .title-arrow svg path{
+    fill:#572437;
+    fill-opacity: 1;
+  }
+  .li_item1>.h2title{
+    display: none;
+  }
+  .li_item1{
+    display: none;
+  }
+  .li_item1.active{
+    display: block;
+  }
+  .li_item2{
+    position: relative;
+    overflow: hidden;
+    height: 49px;
+  }
+  .li_item2.active{
+    overflow: visible;
+    height: 100%;
+  }
+  .li_item2 .title{
+    position: relative;
+  
+  }
+
+  .li_item3{
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+  }
+  .li_item3.active{
+    height: 100%;
+  }
+  .li_item3 .title{
+    position: relative;
+  
+  }
+  .li_item3.active > .h2title .title-arrow{
+    transform: rotate(180deg);
+  }
+  .li_item3.active > .h2title .title-arrow svg path{
+    fill:#572437;
+    fill-opacity: 1;
+  }
+
+  .li_item4{
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+  }
+
+  /* .li_item4.active{
+    overflow: visible;
+    height: 100%;
+  } */
+  .li_item4 .title{
+    position: relative;
+  
+  }
+  .li_item4.active > .h2title .title-arrow{
+    transform: rotate(180deg);
+  }
+  .li_item4.active > .h2title .title-arrow svg path{
+    fill:#572437;
+    fill-opacity: 1;
+  }
+  .li_item5.active > .h2title .title-arrow{
+    transform: rotate(180deg);
+  }
+  .li_item5.active > .h2title .title-arrow svg path{
+    fill:#572437;
+    fill-opacity: 1;
+  }
+
+  .description_item2{
+    overflow: hidden;
+  }
+  .description{
+    display: none;
+  }
+  .description.active{
+    display: block;
+  }
+  .descr_name{
+    color: #572437;
+    font-family: 'Azo Sans 2';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%; 
+  }
+  .descr_description{
+    color: #575756;
+    font-family: 'Azo Sans 2';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .deskr_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .descr_price{
+    color: #572437;
+    font-family: 'Azo Sans 2';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    margin-right: 30px;
+  }
+  .service_button{
+    padding: 20px 35px;
+    background: #572437;    
+  }
+  .service_button p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Azo Sans 2';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+.descr_description-mobile{
+  display: none;
+}
